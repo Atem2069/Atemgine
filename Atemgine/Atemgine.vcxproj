@@ -87,7 +87,7 @@
       <AdditionalIncludeDirectories>C:\Users\Henry\source\Atemgine\libs\glfw-3.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Lib>
-      <AdditionalDependencies>glfw3.lib;d3d11.lib;dxgi.lib</AdditionalDependencies>
+      <AdditionalDependencies>d3dcompiler.lib;glfw3.lib;d3d11.lib;dxgi.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>C:\Users\Henry\source\Atemgine\libs\glfw-3.2.1\bin\x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
     <PostBuildEvent>
@@ -132,9 +132,12 @@
     <ClInclude Include="headers\base\RenderDeviceBase.h" />
     <ClInclude Include="headers\base\RendererBase.h" />
     <ClInclude Include="headers\base\RenderTargetBase.h" />
+    <ClInclude Include="headers\base\ShaderBase.h" />
     <ClInclude Include="headers\d3d11\RenderDeviceD3D11.h" />
     <ClInclude Include="headers\d3d11\RendererD3D11.h" />
     <ClInclude Include="headers\d3d11\RenderTargetD3D11.h" />
+    <ClInclude Include="headers\d3d11\VertexShaderD3D11.h" />
+    <ClInclude Include="headers\DrawCall.h" />
     <ClInclude Include="headers\RenderDevice.h" />
     <ClInclude Include="headers\Renderer.h" />
     <ClInclude Include="headers\RenderTarget.h" />
@@ -143,6 +146,7 @@
     <ClCompile Include="src\d3d11\RenderDeviceD3D11.cpp" />
     <ClCompile Include="src\d3d11\RendererD3D11.cpp" />
     <ClCompile Include="src\d3d11\RenderTargetD3D11.cpp" />
+    <ClCompile Include="src\d3d11\VertexShaderD3D11.cpp" />
     <ClCompile Include="src\Renderer.cpp" />
     <ClCompile Include="src\RenderTarget.cpp" />
   </ItemGroup>

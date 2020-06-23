@@ -1,6 +1,6 @@
 #include "..\..\headers\d3d11\RenderTargetD3D11.h"
 
-bool IDirect3D11RenderTarget::APIinitialize(int width, int height)
+bool IDirect3D11RenderTarget::APIInitialize(int width, int height)
 {
 	ID3D11Texture2D* backBufferRef;
 	IRenderer::getSwapChain()->getSwapChain()->GetBuffer(0, __uuidof(ID3D11Texture2D), (void**)&backBufferRef);
@@ -16,16 +16,16 @@ bool IDirect3D11RenderTarget::APIinitialize(int width, int height)
 	backBufferRef->Release();
 	return true;
 }
-void IDirect3D11RenderTarget::APIdestroy()
+void IDirect3D11RenderTarget::APIDestroy()
 {
 	m_renderTargetView->Release();
 }
 
-void IDirect3D11RenderTarget::APIsetActive()
+void IDirect3D11RenderTarget::APISetActive()
 {
 	IRenderer::getRenderDevice()->getDeviceContext()->OMSetRenderTargets(1, &m_renderTargetView, nullptr);
 }
-void IDirect3D11RenderTarget::APIclear(XMFLOAT4 color, float depth)
+void IDirect3D11RenderTarget::APIClear(XMFLOAT4 color, float depth)
 {
 	float col[4] = { color.x,color.y,color.z,color.w };
 	IRenderer::getRenderDevice()->getDeviceContext()->ClearRenderTargetView(m_renderTargetView, col);

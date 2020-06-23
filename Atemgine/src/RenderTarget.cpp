@@ -2,20 +2,20 @@
 
 bool IRenderTarget::initialize(int width, int height)
 {
-	return APIinitialize(width, height);
+	return APIInitialize(width, height);
 }
 
 void IRenderTarget::destroy()
 {
-	APIdestroy();
+	APIDestroy();
 }
 
 void IRenderTarget::setActive()
 {
-	APIsetActive();
+	APISetActive();
 }
 
 void IRenderTarget::clear(XMFLOAT4 color, float depth)
 {
-	APIclear(color, depth);
+	APIClear(color, depth);
 }

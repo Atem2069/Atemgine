@@ -1,6 +1,7 @@
 #pragma once
 
 #include<Windows.h>
+#include "..\DrawCall.h"
 
 class IRendererBase
 {
@@ -13,6 +14,8 @@ public:
 	virtual void processEvents() = 0;
 
 	virtual void present() = 0;
+
+	virtual void draw(DrawCall drawCallInfo) = 0;
 protected:
 };
 

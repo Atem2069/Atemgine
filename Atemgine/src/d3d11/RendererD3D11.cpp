@@ -35,7 +35,7 @@ bool IDirect3D11SwapChain::APIInitialize(IRenderDevice* m_device, int width, int
 	return true;
 }
 
-void IDirect3D11SwapChain::APIpresent()
+void IDirect3D11SwapChain::APIPresent()
 {
 	m_swapChain->Present(0, 0);
 }
@@ -45,14 +45,24 @@ void IDirect3D11SwapChain::APIpresent()
 IRenderDevice* IDirect3D11Renderer::APIInitialize()
 {
 	IRenderDevice* renderDevice = new IRenderDevice;
-	ID3D11Device* tempDevice;
-	ID3D11DeviceContext* tempDeviceContext;
 	HRESULT result;
 	D3D_FEATURE_LEVEL featureLevels[1] = { D3D_FEATURE_LEVEL_11_0 };
-	result = D3D11CreateDevice(nullptr, D3D_DRIVER_TYPE_HARDWARE, 0, D3D11_CREATE_DEVICE_DEBUG, featureLevels, 1, D3D11_SDK_VERSION, &tempDevice, nullptr, &tempDeviceContext);
+	result = D3D11CreateDevice(nullptr, D3D_DRIVER_TYPE_HARDWARE, 0, D3D11_CREATE_DEVICE_DEBUG, featureLevels, 1, D3D11_SDK_VERSION, &m_device, nullptr, &m_deviceContext);
 	if (FAILED(result))
 		return nullptr;
-	renderDevice->APISetDevice(tempDevice);
-	renderDevice->APISetDeviceContext(tempDeviceContext);
+	renderDevice->APISetDevice(m_device);
+	renderDevice->APISetDeviceContext(m_deviceContext);
 	return renderDevice;
+}
+
+void IDirect3D11Renderer::APIDispatchDrawCall(DrawCall drawCall)
+{
+	if (drawCall.drawType == DRAWTYPE_DIRECT)
+	{
+		//todo implement 
+	}
+	else
+	{
+		//todo implement
+	}
 }

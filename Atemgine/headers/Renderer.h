@@ -30,6 +30,8 @@ public:
 
 	virtual void present();
 
+	virtual void draw(DrawCall drawCallInfo);
+
 	static ISwapChain* getSwapChain();
 	static IRenderDevice* getRenderDevice();
 private:

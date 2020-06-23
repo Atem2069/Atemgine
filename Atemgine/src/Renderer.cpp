@@ -15,7 +15,7 @@ void ISwapChain::destroy()
 
 void ISwapChain::present()
 {
-	APIpresent();
+	APIPresent();
 }
 
 bool IRenderer::initialize(int width, int height)
@@ -64,6 +64,11 @@ void IRenderer::processEvents()
 void IRenderer::present()
 {
 	IRenderer::getSwapChain()->present();
+}
+
+void IRenderer::draw(DrawCall drawCallInfo)
+{
+	APIDispatchDrawCall(drawCallInfo);
 }
 
 ISwapChain* IRenderer::getSwapChain()
