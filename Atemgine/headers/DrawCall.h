@@ -5,15 +5,15 @@
 #include "VertexBuffer.h"
 #include "IndexBuffer.h"
 
-enum PrimitiveTopology
+enum PrimitiveTopology		//Enums that map primitive topology to API specific stuff (i.e. D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST or GL_TRIANGLES)
 {
 	TOPOLOGY_TRIANGLELIST,
 	TOPOLOGY_LINELIST,
 	TOPOLOGY_POINTLIST
 };
-enum DrawType
+enum DrawType				//Switch between drawing directly from VBO or drawing with index buffer
 {
-	DRAWTYPE_DIRECT,	//If Direct, ignore Index Buffer parameter!!!
+	DRAWTYPE_DIRECT,	//If Direct, ignore Index Buffer parameter
 	DRAWTYPE_INDEXED	
 };
 

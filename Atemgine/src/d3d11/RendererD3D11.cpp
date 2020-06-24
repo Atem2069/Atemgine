@@ -45,7 +45,7 @@ bool IDirect3D11SwapChain::APIInitialize(IRenderDevice* m_device, int width, int
 
 void IDirect3D11SwapChain::APIPresent()
 {
-	m_swapChain->Present(0, 0);
+	m_swapChain->Present(0, 0);	//todo handle present errors (device removed,lost etc.)
 }
 
 //D3D Device
@@ -65,7 +65,6 @@ IRenderDevice* IDirect3D11Renderer::APIInitialize()
 
 void IDirect3D11Renderer::APIDispatchDrawCall(DrawCall drawCall)
 {
-
 	drawCall.vertexShader->bind();
 	drawCall.pixelShader->bind();
 

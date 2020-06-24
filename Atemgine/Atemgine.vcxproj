@@ -129,6 +129,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="headers\Atemgine.h" />
+    <ClInclude Include="headers\base\ConstantBufferBase.h" />
     <ClInclude Include="headers\base\IndexBufferBase.h" />
     <ClInclude Include="headers\base\RenderDeviceBase.h" />
     <ClInclude Include="headers\base\RendererBase.h" />
