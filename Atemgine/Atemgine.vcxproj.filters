@@ -60,9 +60,6 @@
     <ClInclude Include="headers\Atemgine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="headers\DrawCall.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="headers\base\ShaderBase.h">
       <Filter>Header Files\Base</Filter>
     </ClInclude>
@@ -94,6 +91,9 @@
       <Filter>Header Files\Renderer Agnostic</Filter>
     </ClInclude>
     <ClInclude Include="headers\IndexBuffer.h">
+      <Filter>Header Files\Renderer Agnostic</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\DrawCall.h">
       <Filter>Header Files\Renderer Agnostic</Filter>
     </ClInclude>
   </ItemGroup>

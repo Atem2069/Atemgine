@@ -8,7 +8,7 @@ class IDirect3D11IndexBuffer : public IIndexBufferBase
 {
 public:
 protected:
-	bool APIInitialize(unsigned int* indices, int numIndices);
+	bool APIInitialize(IndexUploadData indexData);
 	void APIDestroy();
 	void APIBind();
 private:

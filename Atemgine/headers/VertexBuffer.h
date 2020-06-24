@@ -5,7 +5,7 @@
 class IVertexBuffer : public IDirect3D11VertexBuffer
 {
 public:
-	bool initialize(float* vertices, size_t vertexSizeBytes, int numVertexElements);
+	bool initialize(VertexUploadData vertexData);
 	void destroy();
 	void bind();
 

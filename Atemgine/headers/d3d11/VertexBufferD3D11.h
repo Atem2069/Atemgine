@@ -7,7 +7,7 @@ class IDirect3D11VertexBuffer : public IVertexBufferBase
 {
 public:
 protected:
-	bool APIInitialize(float* vertices, size_t vertexSizeBytes, int numVertexElements);
+	bool APIInitialize(VertexUploadData vertexData);
 	void APIDestroy();
 	void APIBind();
 private:

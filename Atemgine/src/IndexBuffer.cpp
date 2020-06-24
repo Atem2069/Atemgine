@@ -1,9 +1,9 @@
 #include "..\headers\IndexBuffer.h"
 
-bool IIndexBuffer::initialize(unsigned int* indices, int numIndices)
+bool IIndexBuffer::initialize(IndexUploadData indexData)
 {
-	m_numIndices = numIndices;
-	return APIInitialize(indices, numIndices);
+	m_numIndices = indexData.numIndices;
+	return APIInitialize(indexData);
 }
 
 void IIndexBuffer::destroy()

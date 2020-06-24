@@ -6,7 +6,7 @@
 class IIndexBuffer : public IDirect3D11IndexBuffer
 {
 public:
-	bool initialize(unsigned int* indices, int numIndices);
+	bool initialize(IndexUploadData indexData);
 	void destroy();
 	void bind();
 

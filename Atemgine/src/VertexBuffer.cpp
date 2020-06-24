@@ -1,9 +1,9 @@
 #include "..\headers\VertexBuffer.h"
 
-bool IVertexBuffer::initialize(float* vertices, size_t vertexSizeBytes, int numVertexElements)
+bool IVertexBuffer::initialize(VertexUploadData vertexData)
 {
-	m_numVertices = numVertexElements;
-	return APIInitialize(vertices, vertexSizeBytes, numVertexElements);
+	m_numVertices = vertexData.numVertexElements;
+	return APIInitialize(vertexData);
 }
 
 void IVertexBuffer::destroy()
