@@ -26,4 +26,7 @@ struct DrawCall
 
 	PrimitiveTopology primitiveTopology;
 	DrawType drawType;
+
+	int baseVertex;
+	int baseIndex;
 };

@@ -85,13 +85,13 @@ void IDirect3D11Renderer::APIDispatchDrawCall(DrawCall drawCall)
 	if (drawCall.drawType == DRAWTYPE_DIRECT)
 	{
 		drawCall.vertexBuffer->bind();
-		m_deviceContext->Draw(drawCall.vertexBuffer->getVertexCount(), 0);
+		m_deviceContext->Draw(drawCall.vertexBuffer->getVertexCount(), drawCall.baseVertex);
 	}
 
 	else if(drawCall.drawType = DRAWTYPE_INDEXED)
 	{
 		drawCall.vertexBuffer->bind();
 		drawCall.indexBuffer->bind();
-		m_deviceContext->DrawIndexed(drawCall.indexBuffer->getIndexCount(), 0, 0);
+		m_deviceContext->DrawIndexed(drawCall.indexBuffer->getIndexCount(), drawCall.baseIndex, drawCall.baseVertex);
 	}
 }
