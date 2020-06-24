@@ -9,6 +9,7 @@
 
 struct GLFWwindow;	//forward declare meme
 class IRenderer;	//more forward declares for IRenderer which ISwapChain wants
+class IRenderTarget;
 
 class ISwapChain : public IDirect3D11SwapChain
 {
@@ -34,8 +35,12 @@ public:
 
 	static ISwapChain* getSwapChain();
 	static IRenderDevice* getRenderDevice();
+	static IRenderer* getCurrentInstance();
+	IRenderTarget* getRenderTarget();
 private:
 	GLFWwindow* m_window;
 	static ISwapChain* m_swapChain;
 	static IRenderDevice* m_renderDevice;
+	static IRenderer* m_currentInstance;
+	IRenderTarget* m_defaultRenderTarget;
 };

@@ -1,4 +1,5 @@
 #include "..\headers\Renderer.h"
+#include "..\headers\RenderTarget.h"
 
 #include<GLFW/glfw3.h>
 #include<GLFW/glfw3native.h>
@@ -35,6 +36,12 @@ bool IRenderer::initialize(int width, int height)
 	m_swapChain = new ISwapChain;
 	if (!m_swapChain->initialize(width, height, glfwGetWin32Window(m_window)))
 		return false;
+
+	m_defaultRenderTarget = new IRenderTarget;
+	if (!m_defaultRenderTarget->initialize(width, height))
+		return false;
+
+	m_currentInstance = this;
 
 	return true;
 
@@ -81,6 +88,17 @@ IRenderDevice* IRenderer::getRenderDevice()
 	return m_renderDevice;
 }
 
+IRenderer* IRenderer::getCurrentInstance()
+{
+	return m_currentInstance;
+}
+
+IRenderTarget* IRenderer::getRenderTarget()
+{
+	return m_defaultRenderTarget;
+}
+
 IRenderDevice* IRenderer::m_renderDevice = nullptr;
-ISwapChain* IRenderer::m_swapChain = nullptr;;
+ISwapChain* IRenderer::m_swapChain = nullptr;
+IRenderer* IRenderer::m_currentInstance = nullptr;
 
