@@ -32,6 +32,14 @@ bool IDirect3D11SwapChain::APIInitialize(IRenderDevice* m_device, int width, int
 		return false;
 
 	tempFactory->Release();
+
+	//set viewport
+	D3D11_VIEWPORT defaultViewport = {};
+	defaultViewport.MinDepth = 0;
+	defaultViewport.MaxDepth = 1;
+	defaultViewport.Width = width;
+	defaultViewport.Height = height;
+	m_device->getDeviceContext()->RSSetViewports(1, &defaultViewport);
 	return true;
 }
 

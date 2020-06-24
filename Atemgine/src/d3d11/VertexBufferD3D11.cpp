@@ -1,13 +1,15 @@
 #include "..\..\headers\d3d11\VertexBufferD3D11.h"
 #include "..\..\headers\Renderer.h"
 
-bool IDirect3D11VertexBuffer::APIInitialize(float* vertices, int numVertices)
+bool IDirect3D11VertexBuffer::APIInitialize(float* vertices, size_t vertexSizeBytes, int numVertexElements)
 {
+	m_stride = vertexSizeBytes;
+
 	D3D11_BUFFER_DESC bufferDesc = {};
 	bufferDesc.BindFlags = D3D11_BIND_VERTEX_BUFFER;
-	bufferDesc.ByteWidth = numVertices * sizeof(float);
+	bufferDesc.ByteWidth = vertexSizeBytes * numVertexElements;
 	bufferDesc.CPUAccessFlags = 0;
-	bufferDesc.MiscFlags = 0;;
+	bufferDesc.MiscFlags = 0;
 	bufferDesc.StructureByteStride = 0;;
 	bufferDesc.Usage = D3D11_USAGE_DEFAULT;
 
@@ -27,6 +29,6 @@ void IDirect3D11VertexBuffer::APIDestroy()
 
 void IDirect3D11VertexBuffer::APIBind()
 {
-	UINT stride = 0, offset = 0;
-	IRenderer::getRenderDevice()->getDeviceContext()->IASetVertexBuffers(0, 1, &m_vertexBuffer, &stride, &offset);
+	UINT offset = 0;
+	IRenderer::getRenderDevice()->getDeviceContext()->IASetVertexBuffers(0, 1, &m_vertexBuffer, &m_stride, &offset);
 }
