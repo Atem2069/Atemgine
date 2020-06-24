@@ -57,6 +57,10 @@ IRenderDevice* IDirect3D11Renderer::APIInitialize()
 
 void IDirect3D11Renderer::APIDispatchDrawCall(DrawCall drawCall)
 {
+
+	drawCall.vertexShader->bind();
+	drawCall.pixelShader->bind();
+
 	switch (drawCall.primitiveTopology)	//translate shape type from front end to API specific 
 	{
 	case TOPOLOGY_TRIANGLELIST:

@@ -1,5 +1,8 @@
 #pragma once
 
+#include "VertexShader.h"
+#include "PixelShader.h"
+
 enum PrimitiveTopology
 {
 	TOPOLOGY_TRIANGLELIST,
@@ -14,8 +17,8 @@ enum DrawType
 
 class IVertexBuffer;
 class IIndexBuffer;
-class IVertexShader;
-class IPixelShader;	//forward declare classes that go into drawcall
+//class IVertexShader;
+//class IPixelShader;	//forward declare classes that go into drawcall
 
 struct DrawCall
 {
