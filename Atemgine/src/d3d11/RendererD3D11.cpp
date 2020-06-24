@@ -57,6 +57,18 @@ IRenderDevice* IDirect3D11Renderer::APIInitialize()
 
 void IDirect3D11Renderer::APIDispatchDrawCall(DrawCall drawCall)
 {
+	switch (drawCall.primitiveTopology)	//translate shape type from front end to API specific 
+	{
+	case TOPOLOGY_TRIANGLELIST:
+		m_deviceContext->IASetPrimitiveTopology(D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
+		break;
+	case TOPOLOGY_LINELIST:
+		m_deviceContext->IASetPrimitiveTopology(D3D11_PRIMITIVE_TOPOLOGY_LINELIST);
+		break;
+	case TOPOLOGY_POINTLIST:
+		m_deviceContext->IASetPrimitiveTopology(D3D11_PRIMITIVE_TOPOLOGY_POINTLIST);;
+		break;
+	}
 	if (drawCall.drawType == DRAWTYPE_DIRECT)
 	{
 		//todo implement 

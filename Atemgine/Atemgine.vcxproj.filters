@@ -69,6 +69,9 @@
     <ClInclude Include="headers\d3d11\VertexShaderD3D11.h">
       <Filter>Header Files\D3D11</Filter>
     </ClInclude>
+    <ClInclude Include="headers\d3d11\PixelShaderD3D11.h">
+      <Filter>Header Files\D3D11</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\d3d11\RendererD3D11.cpp">
@@ -87,6 +90,9 @@
       <Filter>Source Files\Renderer Agnostic</Filter>
     </ClCompile>
     <ClCompile Include="src\d3d11\VertexShaderD3D11.cpp">
+      <Filter>Source Files\D3D11</Filter>
+    </ClCompile>
+    <ClCompile Include="src\d3d11\PixelShaderD3D11.cpp">
       <Filter>Source Files\D3D11</Filter>
     </ClCompile>
   </ItemGroup>
