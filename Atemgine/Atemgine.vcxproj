@@ -143,10 +143,12 @@
     <ClInclude Include="headers\d3d11\VertexBufferD3D11.h" />
     <ClInclude Include="headers\d3d11\VertexShaderD3D11.h" />
     <ClInclude Include="headers\DrawCall.h" />
+    <ClInclude Include="headers\IndexBuffer.h" />
     <ClInclude Include="headers\PixelShader.h" />
     <ClInclude Include="headers\RenderDevice.h" />
     <ClInclude Include="headers\Renderer.h" />
     <ClInclude Include="headers\RenderTarget.h" />
+    <ClInclude Include="headers\VertexBuffer.h" />
     <ClInclude Include="headers\VertexShader.h" />
   </ItemGroup>
   <ItemGroup>
@@ -157,9 +159,11 @@
     <ClCompile Include="src\d3d11\RenderTargetD3D11.cpp" />
     <ClCompile Include="src\d3d11\VertexBufferD3D11.cpp" />
     <ClCompile Include="src\d3d11\VertexShaderD3D11.cpp" />
+    <ClCompile Include="src\IndexBuffer.cpp" />
     <ClCompile Include="src\PixelShader.cpp" />
     <ClCompile Include="src\Renderer.cpp" />
     <ClCompile Include="src\RenderTarget.cpp" />
+    <ClCompile Include="src\VertexBuffer.cpp" />
     <ClCompile Include="src\VertexShader.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

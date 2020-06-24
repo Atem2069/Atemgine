@@ -2,6 +2,8 @@
 
 #include "VertexShader.h"
 #include "PixelShader.h"
+#include "VertexBuffer.h"
+#include "IndexBuffer.h"
 
 enum PrimitiveTopology
 {
@@ -14,11 +16,6 @@ enum DrawType
 	DRAWTYPE_DIRECT,	//If Direct, ignore Index Buffer parameter!!!
 	DRAWTYPE_INDEXED	
 };
-
-class IVertexBuffer;
-class IIndexBuffer;
-//class IVertexShader;
-//class IPixelShader;	//forward declare classes that go into drawcall
 
 struct DrawCall
 {
