@@ -73,12 +73,17 @@ void IDirect3D11Renderer::APIDispatchDrawCall(DrawCall drawCall)
 		m_deviceContext->IASetPrimitiveTopology(D3D11_PRIMITIVE_TOPOLOGY_POINTLIST);;
 		break;
 	}
+
 	if (drawCall.drawType == DRAWTYPE_DIRECT)
 	{
-		//todo implement 
+		drawCall.vertexBuffer->bind();
+		m_deviceContext->Draw(drawCall.vertexBuffer->getVertexCount(), 0);
 	}
-	else
+
+	else if(drawCall.drawType = DRAWTYPE_INDEXED)
 	{
-		//todo implement
+		drawCall.vertexBuffer->bind();
+		drawCall.indexBuffer->bind();
+		m_deviceContext->DrawIndexed(drawCall.indexBuffer->getIndexCount(), 0, 0);
 	}
 }
