@@ -14,6 +14,30 @@ bool IDirect3D11RenderTarget::APIInitialize(int width, int height)
 		return false;
 
 	backBufferRef->Release();
+
+	D3D11_TEXTURE2D_DESC depthTextureDesc = {};
+	depthTextureDesc.Width = width;
+	depthTextureDesc.Height = height;
+	depthTextureDesc.ArraySize = 1;
+	depthTextureDesc.BindFlags = D3D11_BIND_DEPTH_STENCIL;
+	depthTextureDesc.CPUAccessFlags = 0;
+	depthTextureDesc.Format = DXGI_FORMAT_D24_UNORM_S8_UINT;
+	depthTextureDesc.MipLevels = 1;
+	depthTextureDesc.SampleDesc.Count = 1;
+	depthTextureDesc.Usage = D3D11_USAGE_DEFAULT;
+
+	result = IRenderer::getRenderDevice()->getDevice()->CreateTexture2D(&depthTextureDesc, nullptr, &m_depthBuffer);
+	if (FAILED(result))
+		return false;
+
+	D3D11_DEPTH_STENCIL_VIEW_DESC dsvDesc = {};
+	dsvDesc.Format = DXGI_FORMAT_D24_UNORM_S8_UINT;
+	dsvDesc.ViewDimension = D3D11_DSV_DIMENSION_TEXTURE2D;
+
+	result = IRenderer::getRenderDevice()->getDevice()->CreateDepthStencilView(m_depthBuffer, &dsvDesc, &m_depthStencilView);
+	if (FAILED(result))
+		return false;
+
 	return true;
 }
 void IDirect3D11RenderTarget::APIDestroy()
@@ -23,10 +47,11 @@ void IDirect3D11RenderTarget::APIDestroy()
 
 void IDirect3D11RenderTarget::APISetActive()
 {
-	IRenderer::getRenderDevice()->getDeviceContext()->OMSetRenderTargets(1, &m_renderTargetView, nullptr);
+	IRenderer::getRenderDevice()->getDeviceContext()->OMSetRenderTargets(1, &m_renderTargetView, m_depthStencilView);
 }
 void IDirect3D11RenderTarget::APIClear(XMFLOAT4 color, float depth)
 {
 	float col[4] = { color.x,color.y,color.z,color.w };
 	IRenderer::getRenderDevice()->getDeviceContext()->ClearRenderTargetView(m_renderTargetView, col);
+	IRenderer::getRenderDevice()->getDeviceContext()->ClearDepthStencilView(m_depthStencilView, D3D11_CLEAR_DEPTH, depth, 0);
 }

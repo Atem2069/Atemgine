@@ -15,5 +15,8 @@ protected:
 
 	ID3D11RenderTargetView* m_renderTargetView;
 
+	ID3D11Texture2D* m_depthBuffer;
+	ID3D11DepthStencilView* m_depthStencilView;
+
 	friend class IDirect3D11Renderer;
 };
