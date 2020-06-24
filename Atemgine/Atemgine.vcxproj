@@ -135,10 +135,12 @@
     <ClInclude Include="headers\base\RenderTargetBase.h" />
     <ClInclude Include="headers\base\ShaderBase.h" />
     <ClInclude Include="headers\base\VertexBufferBase.h" />
+    <ClInclude Include="headers\d3d11\IndexBufferD3D11.h" />
     <ClInclude Include="headers\d3d11\PixelShaderD3D11.h" />
     <ClInclude Include="headers\d3d11\RenderDeviceD3D11.h" />
     <ClInclude Include="headers\d3d11\RendererD3D11.h" />
     <ClInclude Include="headers\d3d11\RenderTargetD3D11.h" />
+    <ClInclude Include="headers\d3d11\VertexBufferD3D11.h" />
     <ClInclude Include="headers\d3d11\VertexShaderD3D11.h" />
     <ClInclude Include="headers\DrawCall.h" />
     <ClInclude Include="headers\PixelShader.h" />
@@ -148,10 +150,12 @@
     <ClInclude Include="headers\VertexShader.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\d3d11\IndexBufferD3D11.cpp" />
     <ClCompile Include="src\d3d11\PixelShaderD3D11.cpp" />
     <ClCompile Include="src\d3d11\RenderDeviceD3D11.cpp" />
     <ClCompile Include="src\d3d11\RendererD3D11.cpp" />
     <ClCompile Include="src\d3d11\RenderTargetD3D11.cpp" />
+    <ClCompile Include="src\d3d11\VertexBufferD3D11.cpp" />
     <ClCompile Include="src\d3d11\VertexShaderD3D11.cpp" />
     <ClCompile Include="src\PixelShader.cpp" />
     <ClCompile Include="src\Renderer.cpp" />
