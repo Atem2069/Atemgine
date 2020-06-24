@@ -78,7 +78,7 @@ void IDirect3D11Renderer::APIDispatchDrawCall(DrawCall drawCall)
 		m_deviceContext->IASetPrimitiveTopology(D3D11_PRIMITIVE_TOPOLOGY_LINELIST);
 		break;
 	case TOPOLOGY_POINTLIST:
-		m_deviceContext->IASetPrimitiveTopology(D3D11_PRIMITIVE_TOPOLOGY_POINTLIST);;
+		m_deviceContext->IASetPrimitiveTopology(D3D11_PRIMITIVE_TOPOLOGY_POINTLIST);
 		break;
 	}
 
@@ -88,7 +88,7 @@ void IDirect3D11Renderer::APIDispatchDrawCall(DrawCall drawCall)
 		m_deviceContext->Draw(drawCall.vertexBuffer->getVertexCount(), drawCall.baseVertex);
 	}
 
-	else if(drawCall.drawType = DRAWTYPE_INDEXED)
+	else if(drawCall.drawType == DRAWTYPE_INDEXED)
 	{
 		drawCall.vertexBuffer->bind();
 		drawCall.indexBuffer->bind();
