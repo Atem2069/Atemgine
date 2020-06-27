@@ -6,6 +6,8 @@
 #include "IndexBuffer.h"
 #include "ConstantBuffer.h"
 
+class ITexture2D;
+
 enum PrimitiveTopology		//Enums that map primitive topology to API specific stuff (i.e. D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST or GL_TRIANGLES)
 {
 	TOPOLOGY_TRIANGLELIST,
@@ -34,4 +36,31 @@ struct DrawCall
 
 	int baseVertex;
 	int baseIndex;
+};
+
+struct DrawInstance
+{
+	int baseVertex;
+	int baseIndex;
+	int textureID;
+};
+
+struct BatchedDrawCall
+{
+	IVertexBuffer* vertexBuffer;
+	IIndexBuffer* indexBuffer;
+	IVertexShader* vertexShader;
+	IPixelShader* pixelShader;
+
+	IConstantBuffer** constantBuffers;
+	int numConstantBuffers;
+
+	ITexture2D** textures;
+	int numTextures;
+
+	PrimitiveTopology primitiveTopology;
+	DrawType drawType;
+
+	DrawInstance* drawInstances;
+	int numDrawInstances;
 };
