@@ -21,5 +21,5 @@ public:
 
 	virtual void bind(ConstBufferBindingLocation bindingLocation, int binding) = 0;
 
-	virtual bool update(ConstantBufferUploadInfo newData) = 0;
+	virtual bool update(ConstantBufferUploadInfo bufferData) = 0;
 };

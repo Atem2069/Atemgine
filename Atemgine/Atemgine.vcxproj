@@ -136,6 +136,8 @@
     <ClInclude Include="headers\base\RenderTargetBase.h" />
     <ClInclude Include="headers\base\ShaderBase.h" />
     <ClInclude Include="headers\base\VertexBufferBase.h" />
+    <ClInclude Include="headers\ConstantBuffer.h" />
+    <ClInclude Include="headers\d3d11\ConstantBufferD3D11.h" />
     <ClInclude Include="headers\d3d11\IndexBufferD3D11.h" />
     <ClInclude Include="headers\d3d11\PixelShaderD3D11.h" />
     <ClInclude Include="headers\d3d11\RenderDeviceD3D11.h" />
@@ -153,6 +155,8 @@
     <ClInclude Include="headers\VertexShader.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\ConstantBuffer.cpp" />
+    <ClCompile Include="src\d3d11\ConstantBufferD3D11.cpp" />
     <ClCompile Include="src\d3d11\IndexBufferD3D11.cpp" />
     <ClCompile Include="src\d3d11\PixelShaderD3D11.cpp" />
     <ClCompile Include="src\d3d11\RenderDeviceD3D11.cpp" />
