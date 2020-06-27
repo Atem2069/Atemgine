@@ -4,6 +4,7 @@
 #include "PixelShader.h"
 #include "VertexBuffer.h"
 #include "IndexBuffer.h"
+#include "ConstantBuffer.h"
 
 enum PrimitiveTopology		//Enums that map primitive topology to API specific stuff (i.e. D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST or GL_TRIANGLES)
 {
@@ -23,6 +24,10 @@ struct DrawCall
 	IIndexBuffer* indexBuffer;
 	IVertexShader* vertexShader;
 	IPixelShader* pixelShader;
+
+	IConstantBuffer** constantBuffers;
+	int numConstantBuffers;
+	//shader resource stuff here
 
 	PrimitiveTopology primitiveTopology;
 	DrawType drawType;

@@ -68,6 +68,9 @@ void IDirect3D11Renderer::APIDispatchDrawCall(DrawCall drawCall)
 	drawCall.vertexShader->bind();
 	drawCall.pixelShader->bind();
 
+	for (int i = 0; i < drawCall.numConstantBuffers; i++)
+		drawCall.constantBuffers[i]->bind();
+
 	switch (drawCall.primitiveTopology)	//translate shape type from front end to API specific 
 	{
 	case TOPOLOGY_TRIANGLELIST:

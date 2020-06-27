@@ -10,9 +10,15 @@ void IConstantBuffer::destroy()
 	APIDestroy();
 }
 
-void IConstantBuffer::bind(ConstBufferBindingLocation bindingLocation, int binding)
+void IConstantBuffer::setBinding(ConstBufferBindingLocation bindingLocation, int binding)
 {
-	APIBind(bindingLocation, binding);
+	m_bindingLocation = bindingLocation;
+	m_binding = binding;
+}
+
+void IConstantBuffer::bind()
+{
+	APIBind(m_bindingLocation, m_binding);
 }
 
 bool IConstantBuffer::update(ConstantBufferUploadInfo bufferData)

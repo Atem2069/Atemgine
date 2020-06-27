@@ -19,7 +19,9 @@ public:
 	virtual bool initialize(ConstantBufferUploadInfo bufferData) = 0;
 	virtual void destroy() = 0;
 
-	virtual void bind(ConstBufferBindingLocation bindingLocation, int binding) = 0;
+	virtual void setBinding(ConstBufferBindingLocation bindingLocation, int binding) = 0;
+
+	virtual void bind() = 0;
 
 	virtual bool update(ConstantBufferUploadInfo bufferData) = 0;
 };
