@@ -68,7 +68,7 @@ void IDirect3D11Renderer::APIDispatchDrawCall(DrawCall drawCall)
 	drawCall.vertexShader->bind();
 	drawCall.pixelShader->bind();
 
-	for (int i = 0; i < drawCall.numConstantBuffers; i++)
+	for (int i = 0; i < drawCall.constantBuffers.size(); i++)
 		drawCall.constantBuffers[i]->bind();
 
 	switch (drawCall.primitiveTopology)	//translate shape type from front end to API specific 
@@ -87,13 +87,24 @@ void IDirect3D11Renderer::APIDispatchDrawCall(DrawCall drawCall)
 	if (drawCall.drawType == DRAWTYPE_DIRECT)
 	{
 		drawCall.vertexBuffer->bind();
-		m_deviceContext->Draw(drawCall.vertexBuffer->getVertexCount(), drawCall.baseVertex);
+		m_deviceContext->Draw(drawCall.vertexBuffer->getVertexCount(), drawCall.drawInstances[0].baseVertex);
 	}
 
 	else if(drawCall.drawType == DRAWTYPE_INDEXED)
 	{
 		drawCall.vertexBuffer->bind();
 		drawCall.indexBuffer->bind();
-		m_deviceContext->DrawIndexed(drawCall.indexBuffer->getIndexCount(), drawCall.baseIndex, drawCall.baseVertex);
+		m_deviceContext->DrawIndexed(drawCall.indexBuffer->getIndexCount(), drawCall.drawInstances[0].baseIndex, drawCall.drawInstances[0].baseVertex);
+	}
+
+	else if (drawCall.drawType == DRAWTYPE_MULTIDRAWINDEXED)
+	{
+		drawCall.vertexBuffer->bind();
+		drawCall.indexBuffer->bind();
+		for (int i = 0; i < drawCall.drawInstances.size(); i++)
+		{
+			//todo some binding stuff
+			m_deviceContext->DrawIndexed(drawCall.drawInstances[i].numIndices, drawCall.drawInstances[i].baseIndex, drawCall.drawInstances[i].baseVertex);
+		}
 	}
 }
