@@ -13,144 +13,162 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Header Files\Base">
-      <UniqueIdentifier>{fb3f9696-0419-4a7a-8799-306dd535ff8b}</UniqueIdentifier>
+    <Filter Include="Header Files\Renderer">
+      <UniqueIdentifier>{13f47a7f-4f44-41fd-80df-aa5470b11e37}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\D3D11">
-      <UniqueIdentifier>{d195d318-b66b-4df4-8314-c51e94351fff}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\D3D11">
-      <UniqueIdentifier>{05526eab-7d49-4e08-aab7-90de8f8eb7df}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Renderer Agnostic">
+    <Filter Include="Header Files\Renderer\Renderer Agnostic">
       <UniqueIdentifier>{b938c140-661e-4d1a-b6c5-9493f0b0a22a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Renderer Agnostic">
+    <Filter Include="Header Files\Renderer\D3D11">
+      <UniqueIdentifier>{d195d318-b66b-4df4-8314-c51e94351fff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Renderer\Base">
+      <UniqueIdentifier>{fb3f9696-0419-4a7a-8799-306dd535ff8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Renderer">
+      <UniqueIdentifier>{91ebb5a1-3dfb-4ff8-9d65-651a709c4254}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Renderer\Renderer Agnostic">
       <UniqueIdentifier>{dc738a2f-4094-4d60-b4f3-89587a1e1b06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Renderer\D3D11">
+      <UniqueIdentifier>{05526eab-7d49-4e08-aab7-90de8f8eb7df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine">
+      <UniqueIdentifier>{9429bcdd-7fcc-4978-95e7-c987fd12bc85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine">
+      <UniqueIdentifier>{4c2a0a51-2561-41d6-b4bc-01cb3bae06e9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="headers\base\RendererBase.h">
-      <Filter>Header Files\Base</Filter>
+      <Filter>Header Files\Renderer\Base</Filter>
     </ClInclude>
     <ClInclude Include="headers\d3d11\RendererD3D11.h">
-      <Filter>Header Files\D3D11</Filter>
+      <Filter>Header Files\Renderer\D3D11</Filter>
     </ClInclude>
     <ClInclude Include="headers\Renderer.h">
-      <Filter>Header Files\Renderer Agnostic</Filter>
+      <Filter>Header Files\Renderer\Renderer Agnostic</Filter>
     </ClInclude>
     <ClInclude Include="headers\base\RenderDeviceBase.h">
-      <Filter>Header Files\Base</Filter>
+      <Filter>Header Files\Renderer\Base</Filter>
     </ClInclude>
     <ClInclude Include="headers\d3d11\RenderDeviceD3D11.h">
-      <Filter>Header Files\D3D11</Filter>
+      <Filter>Header Files\Renderer\D3D11</Filter>
     </ClInclude>
     <ClInclude Include="headers\RenderDevice.h">
-      <Filter>Header Files\Renderer Agnostic</Filter>
+      <Filter>Header Files\Renderer\Renderer Agnostic</Filter>
     </ClInclude>
     <ClInclude Include="headers\base\RenderTargetBase.h">
-      <Filter>Header Files\Base</Filter>
+      <Filter>Header Files\Renderer\Base</Filter>
     </ClInclude>
     <ClInclude Include="headers\d3d11\RenderTargetD3D11.h">
-      <Filter>Header Files\D3D11</Filter>
+      <Filter>Header Files\Renderer\D3D11</Filter>
     </ClInclude>
     <ClInclude Include="headers\RenderTarget.h">
-      <Filter>Header Files\Renderer Agnostic</Filter>
+      <Filter>Header Files\Renderer\Renderer Agnostic</Filter>
     </ClInclude>
     <ClInclude Include="headers\Atemgine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="headers\base\ShaderBase.h">
-      <Filter>Header Files\Base</Filter>
+      <Filter>Header Files\Renderer\Base</Filter>
     </ClInclude>
     <ClInclude Include="headers\d3d11\VertexShaderD3D11.h">
-      <Filter>Header Files\D3D11</Filter>
+      <Filter>Header Files\Renderer\D3D11</Filter>
     </ClInclude>
     <ClInclude Include="headers\d3d11\PixelShaderD3D11.h">
-      <Filter>Header Files\D3D11</Filter>
+      <Filter>Header Files\Renderer\D3D11</Filter>
     </ClInclude>
     <ClInclude Include="headers\VertexShader.h">
-      <Filter>Header Files\Renderer Agnostic</Filter>
+      <Filter>Header Files\Renderer\Renderer Agnostic</Filter>
     </ClInclude>
     <ClInclude Include="headers\PixelShader.h">
-      <Filter>Header Files\Renderer Agnostic</Filter>
+      <Filter>Header Files\Renderer\Renderer Agnostic</Filter>
     </ClInclude>
     <ClInclude Include="headers\base\VertexBufferBase.h">
-      <Filter>Header Files\Base</Filter>
+      <Filter>Header Files\Renderer\Base</Filter>
     </ClInclude>
     <ClInclude Include="headers\base\IndexBufferBase.h">
-      <Filter>Header Files\Base</Filter>
+      <Filter>Header Files\Renderer\Base</Filter>
     </ClInclude>
     <ClInclude Include="headers\d3d11\VertexBufferD3D11.h">
-      <Filter>Header Files\D3D11</Filter>
+      <Filter>Header Files\Renderer\D3D11</Filter>
     </ClInclude>
     <ClInclude Include="headers\d3d11\IndexBufferD3D11.h">
-      <Filter>Header Files\D3D11</Filter>
+      <Filter>Header Files\Renderer\D3D11</Filter>
     </ClInclude>
     <ClInclude Include="headers\VertexBuffer.h">
-      <Filter>Header Files\Renderer Agnostic</Filter>
+      <Filter>Header Files\Renderer\Renderer Agnostic</Filter>
     </ClInclude>
     <ClInclude Include="headers\IndexBuffer.h">
-      <Filter>Header Files\Renderer Agnostic</Filter>
+      <Filter>Header Files\Renderer\Renderer Agnostic</Filter>
     </ClInclude>
     <ClInclude Include="headers\DrawCall.h">
-      <Filter>Header Files\Renderer Agnostic</Filter>
+      <Filter>Header Files\Renderer\Renderer Agnostic</Filter>
     </ClInclude>
     <ClInclude Include="headers\base\ConstantBufferBase.h">
-      <Filter>Header Files\Base</Filter>
+      <Filter>Header Files\Renderer\Base</Filter>
     </ClInclude>
     <ClInclude Include="headers\d3d11\ConstantBufferD3D11.h">
-      <Filter>Header Files\D3D11</Filter>
+      <Filter>Header Files\Renderer\D3D11</Filter>
     </ClInclude>
     <ClInclude Include="headers\ConstantBuffer.h">
-      <Filter>Header Files\Renderer Agnostic</Filter>
+      <Filter>Header Files\Renderer\Renderer Agnostic</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\Engine\Model.h">
+      <Filter>Header Files\Engine</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\d3d11\RendererD3D11.cpp">
-      <Filter>Source Files\D3D11</Filter>
+      <Filter>Source Files\Renderer\D3D11</Filter>
     </ClCompile>
     <ClCompile Include="src\Renderer.cpp">
-      <Filter>Source Files\Renderer Agnostic</Filter>
+      <Filter>Source Files\Renderer\Renderer Agnostic</Filter>
     </ClCompile>
     <ClCompile Include="src\d3d11\RenderDeviceD3D11.cpp">
-      <Filter>Source Files\D3D11</Filter>
+      <Filter>Source Files\Renderer\D3D11</Filter>
     </ClCompile>
     <ClCompile Include="src\d3d11\RenderTargetD3D11.cpp">
-      <Filter>Source Files\D3D11</Filter>
+      <Filter>Source Files\Renderer\D3D11</Filter>
     </ClCompile>
     <ClCompile Include="src\RenderTarget.cpp">
-      <Filter>Source Files\Renderer Agnostic</Filter>
+      <Filter>Source Files\Renderer\Renderer Agnostic</Filter>
     </ClCompile>
     <ClCompile Include="src\d3d11\VertexShaderD3D11.cpp">
-      <Filter>Source Files\D3D11</Filter>
+      <Filter>Source Files\Renderer\D3D11</Filter>
     </ClCompile>
     <ClCompile Include="src\d3d11\PixelShaderD3D11.cpp">
-      <Filter>Source Files\D3D11</Filter>
+      <Filter>Source Files\Renderer\D3D11</Filter>
     </ClCompile>
     <ClCompile Include="src\VertexShader.cpp">
-      <Filter>Source Files\Renderer Agnostic</Filter>
+      <Filter>Source Files\Renderer\Renderer Agnostic</Filter>
     </ClCompile>
     <ClCompile Include="src\PixelShader.cpp">
-      <Filter>Source Files\Renderer Agnostic</Filter>
+      <Filter>Source Files\Renderer\Renderer Agnostic</Filter>
     </ClCompile>
     <ClCompile Include="src\d3d11\VertexBufferD3D11.cpp">
-      <Filter>Source Files\D3D11</Filter>
+      <Filter>Source Files\Renderer\D3D11</Filter>
     </ClCompile>
     <ClCompile Include="src\d3d11\IndexBufferD3D11.cpp">
-      <Filter>Source Files\D3D11</Filter>
+      <Filter>Source Files\Renderer\D3D11</Filter>
     </ClCompile>
     <ClCompile Include="src\VertexBuffer.cpp">
-      <Filter>Source Files\Renderer Agnostic</Filter>
+      <Filter>Source Files\Renderer\Renderer Agnostic</Filter>
     </ClCompile>
     <ClCompile Include="src\IndexBuffer.cpp">
-      <Filter>Source Files\Renderer Agnostic</Filter>
+      <Filter>Source Files\Renderer\Renderer Agnostic</Filter>
     </ClCompile>
     <ClCompile Include="src\d3d11\ConstantBufferD3D11.cpp">
-      <Filter>Source Files\D3D11</Filter>
+      <Filter>Source Files\Renderer\D3D11</Filter>
     </ClCompile>
     <ClCompile Include="src\ConstantBuffer.cpp">
-      <Filter>Source Files\Renderer Agnostic</Filter>
+      <Filter>Source Files\Renderer\Renderer Agnostic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Model.cpp">
+      <Filter>Source Files\Engine</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
