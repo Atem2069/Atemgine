@@ -1,0 +1,48 @@
+# CMake generation dependency list for this directory.
+C:/Users/Henry/source/Atemgine/libs/assimp/CMakeLists.txt
+C:/Users/Henry/source/Atemgine/libs/assimp/vsproj/CMakeFiles/3.11.2/CMakeSystem.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Users/Henry/source/Atemgine/libs/assimp/vsproj/CMakeFiles/3.11.2/CMakeCCompiler.cmake
+C:/Users/Henry/source/Atemgine/libs/assimp/vsproj/CMakeFiles/3.11.2/CMakeCXXCompiler.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/Platform/Windows-MSVC.cmake
+C:/Users/Henry/source/Atemgine/libs/assimp/vsproj/CMakeFiles/3.11.2/CMakeRCCompiler.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/CMakeCommonLanguageInclude.cmake
+C:/Users/Henry/source/Atemgine/libs/assimp/revision.h.in
+C:/Users/Henry/source/Atemgine/libs/assimp/include/assimp/config.h.in
+C:/Users/Henry/source/Atemgine/libs/assimp/cmake-modules/FindPkgMacros.cmake
+C:/Users/Henry/source/Atemgine/libs/assimp/cmake-modules/PrecompiledHeader.cmake
+C:/Users/Henry/source/Atemgine/libs/assimp/cmake-modules/cmake_uninstall.cmake.in
+C:/Users/Henry/source/Atemgine/libs/assimp/assimp-config.cmake.in
+C:/Users/Henry/source/Atemgine/libs/assimp/assimpTargets.cmake.in
+C:/Users/Henry/source/Atemgine/libs/assimp/assimpTargets-debug.cmake.in
+C:/Users/Henry/source/Atemgine/libs/assimp/assimpTargets-release.cmake.in
+C:/Users/Henry/source/Atemgine/libs/assimp/assimp-config-version.cmake.in
+C:/Users/Henry/source/Atemgine/libs/assimp/cmake-modules/FindDirectX.cmake
+C:/Users/Henry/source/Atemgine/libs/assimp/cmake-modules/FindPkgMacros.cmake
+C:/Users/Henry/source/Atemgine/libs/assimp/cmake-modules/FindZLIB.cmake
+C:/Users/Henry/source/Atemgine/libs/assimp/cmake-modules/FindPkgMacros.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/FindPkgConfig.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/CheckFunctionExists.cmake
+C:/Users/Henry/source/Atemgine/libs/assimp/assimp.pc.in

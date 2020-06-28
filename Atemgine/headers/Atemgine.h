@@ -13,3 +13,5 @@ using namespace DirectX;
 #include "VertexBuffer.h"
 #include "IndexBuffer.h"
 #include "ConstantBuffer.h"
+
+#include "Engine\Model.h"

@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\contrib\gtest\src\gtest-all.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\CCompilerTest.c">
+      <Filter>UnitTests\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\code\Version.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utSimd.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utIOSystem.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utIOStreamBuffer.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utIssues.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utAnim.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\AssimpAPITest.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utBatchLoader.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utDefaultIOStream.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utFastAtof.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utMetadata.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\SceneDiffer.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\AbstractImportExportBase.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utTypes.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utVersion.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utProfiler.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utSharedPPData.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utStringUtils.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\Common\utLineSplitter.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utLWSImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utLWOImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utSMDImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utglTFImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utglTF2ImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utHMPImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utIFCImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utFBXImporterExporter.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utImporter.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\ImportExport\utExporter.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\ut3DImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\ut3DSImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utACImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utAMFImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utASEImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utD3MFImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utQ3DImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utSTLImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utXImporterExporter.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utX3DImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utDXFImporterExporter.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utPMXImporter.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utPLYImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utObjImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utObjTools.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utOpenGEXImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utSIBImporter.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utBlenderIntermediate.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utBlendImportAreaLight.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utBlenderImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utBlendImportMaterials.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utBlenderWork.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utBVHImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utColladaExportCamera.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utColladaExportLight.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utColladaImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utCSMImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utB3DImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utMDCImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utAssbinImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\ImportExport\utCOBImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\ImportExport\utOgreImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\ImportExport\utQ3BSPFileImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\ImportExport\utOFFImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\ImportExport\utNFFImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\ImportExport\utXGLImportExport.cpp">
+      <Filter>UnitTests\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utMaterialSystem.cpp">
+      <Filter>UnitTests\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utMatrix3x3.cpp">
+      <Filter>UnitTests\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utMatrix4x4.cpp">
+      <Filter>UnitTests\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utVector3.cpp">
+      <Filter>UnitTests\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utImproveCacheLocality.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utFixInfacingNormals.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utGenNormals.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utTriangulate.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utTextureTransform.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utRemoveRedundantMaterials.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utRemoveVCProcess.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utScaleProcess.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utJoinVertices.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utRemoveComments.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utRemoveComponent.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utVertexTriangleAdjacency.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utSplitLargeMeshes.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utFindDegenerates.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utFindInvalidData.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utLimitBoneWeights.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utPretransformVertices.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utScenePreprocessor.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utTargetAnimation.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utSortByPType.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\utSceneCombiner.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\SceneDiffer.h">
+      <Filter>UnitTests\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\UTLogStream.h">
+      <Filter>UnitTests\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\TestIOSystem.h">
+      <Filter>UnitTests\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\unit\TestModelFactory.h">
+      <Filter>UnitTests\Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Henry\source\Atemgine\libs\assimp\test\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{34D05953-BED4-3293-A1D6-26EDB0204043}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests">
+      <UniqueIdentifier>{22B0032F-32AF-39BE-83D1-F5FEF043062C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\Common">
+      <UniqueIdentifier>{19E8619B-7F2C-39EF-BD2E-F50D3249B27D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\Compiler">
+      <UniqueIdentifier>{FDE05D09-5BD6-3041-B167-38BEB7DAB921}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\Importers">
+      <UniqueIdentifier>{788186F2-D43A-3FD1-AF8F-7C62B5B89D90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\Material">
+      <UniqueIdentifier>{ABD38518-E208-39E6-9C03-4A1AEEA097B7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\Math">
+      <UniqueIdentifier>{E98A5BBA-C8B6-39A9-A9FC-0EBE4CCBBF3B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\PostProcess">
+      <UniqueIdentifier>{9C33C2F5-1A11-3830-BCB0-71F91FF7871B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

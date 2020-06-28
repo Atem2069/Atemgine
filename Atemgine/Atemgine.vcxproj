@@ -84,11 +84,11 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\Henry\source\Atemgine\libs\glfw-3.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Henry\source\Atemgine\libs\assimp\include;C:\Users\Henry\source\Atemgine\libs\glfw-3.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Lib>
-      <AdditionalDependencies>d3dcompiler.lib;glfw3.lib;d3d11.lib;dxgi.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\Henry\source\Atemgine\libs\glfw-3.2.1\bin\x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>IrrXML.lib;zlibstaticd.lib;assimp-vc140-mt.lib;d3dcompiler.lib;glfw3.lib;d3d11.lib;dxgi.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\Henry\source\Atemgine\libs\assimp\lib\x64\Debug;C:\Users\Henry\source\Atemgine\libs\glfw-3.2.1\bin\x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
     <PostBuildEvent>
       <Command>

@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+C:/Users/Henry/source/Atemgine/libs/assimp/tools/assimp_qt_viewer/CMakeLists.txt
+C:/Program Files/CMake/share/cmake-3.11/Modules/FindOpenGL.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/FindPackageMessage.cmake
