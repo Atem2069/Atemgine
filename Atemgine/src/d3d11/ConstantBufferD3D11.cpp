@@ -5,10 +5,10 @@ bool IDirect3D11ConstantBuffer::APIInitialize(ConstantBufferUploadInfo bufferDat
 	D3D11_BUFFER_DESC constBufferDesc = {};
 	constBufferDesc.BindFlags = D3D11_BIND_CONSTANT_BUFFER;
 	constBufferDesc.ByteWidth = bufferData.sizeBytes;;
-	constBufferDesc.CPUAccessFlags = 0;
+	constBufferDesc.CPUAccessFlags = D3D11_CPU_ACCESS_WRITE;
 	constBufferDesc.MiscFlags = 0;
 	constBufferDesc.StructureByteStride = 0;;
-	constBufferDesc.Usage = D3D11_USAGE_DEFAULT;
+	constBufferDesc.Usage = D3D11_USAGE_DYNAMIC;
 
 	D3D11_SUBRESOURCE_DATA constSubData = {};
 	constSubData.pSysMem = bufferData.rawData;
@@ -35,6 +35,14 @@ void IDirect3D11ConstantBuffer::APIBind(ConstBufferBindingLocation bindingLocati
 
 bool IDirect3D11ConstantBuffer::APIUpdate(ConstantBufferUploadInfo bufferData)
 {
-	//todo implement
-	return false;
+	void* ptr;
+	D3D11_MAPPED_SUBRESOURCE mappedData = {};
+	HRESULT result = IRenderer::getRenderDevice()->getDeviceContext()->Map(m_constantBuffer, 0, D3D11_MAP_WRITE_DISCARD, 0, &mappedData);
+	if (FAILED(result))
+		return false;
+	
+	memcpy(mappedData.pData, bufferData.rawData, bufferData.sizeBytes);
+
+	IRenderer::getRenderDevice()->getDeviceContext()->Unmap(m_constantBuffer, 0);
+	return true;
 }

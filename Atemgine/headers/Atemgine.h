@@ -15,3 +15,4 @@ using namespace DirectX;
 #include "ConstantBuffer.h"
 
 #include "Engine\Model.h"
+#include "Engine\Camera.h"

@@ -120,6 +120,9 @@
     <ClInclude Include="headers\Engine\Model.h">
       <Filter>Header Files\Engine</Filter>
     </ClInclude>
+    <ClInclude Include="headers\Engine\Camera.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\d3d11\RendererD3D11.cpp">
@@ -168,6 +171,9 @@
       <Filter>Source Files\Renderer\Renderer Agnostic</Filter>
     </ClCompile>
     <ClCompile Include="src\Engine\Model.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Camera.cpp">
       <Filter>Source Files\Engine</Filter>
     </ClCompile>
   </ItemGroup>

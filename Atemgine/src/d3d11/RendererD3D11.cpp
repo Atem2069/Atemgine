@@ -97,13 +97,13 @@ void IDirect3D11Renderer::APIDispatchDrawCall(DrawCall drawCall)
 		m_deviceContext->DrawIndexed(drawCall.indexBuffer->getIndexCount(), drawCall.drawInstances[0].baseIndex, drawCall.drawInstances[0].baseVertex);
 	}
 
-	else if (drawCall.drawType == DRAWTYPE_MULTIDRAWINDEXED)
+	else if (drawCall.drawType == DRAWTYPE_MULTIDRAWINDEXED)	//todo merge into DRAWTYPE_INDEXED
 	{
 		drawCall.vertexBuffer->bind();
 		drawCall.indexBuffer->bind();
 		for (int i = 0; i < drawCall.drawInstances.size(); i++)
 		{
-			//todo some binding stuff
+			//todo some binding stuff (shader resources)
 			m_deviceContext->DrawIndexed(drawCall.drawInstances[i].numIndices, drawCall.drawInstances[i].baseIndex, drawCall.drawInstances[i].baseVertex);
 		}
 	}
