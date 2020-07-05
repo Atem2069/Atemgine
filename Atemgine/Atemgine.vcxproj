@@ -147,6 +147,7 @@
     <ClInclude Include="headers\d3d11\VertexShaderD3D11.h" />
     <ClInclude Include="headers\DrawCall.h" />
     <ClInclude Include="headers\Engine\Camera.h" />
+    <ClInclude Include="headers\Engine\Misc\MathHelpers.h" />
     <ClInclude Include="headers\Engine\Model.h" />
     <ClInclude Include="headers\IndexBuffer.h" />
     <ClInclude Include="headers\PixelShader.h" />

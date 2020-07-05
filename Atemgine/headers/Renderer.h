@@ -33,11 +33,14 @@ public:
 
 	virtual void draw(DrawCall drawCallInfo);
 
+	virtual float deltaTime();
+
 	static ISwapChain* getSwapChain();
 	static IRenderDevice* getRenderDevice();
 	static IRenderer* getCurrentInstance();
 	IRenderTarget* getRenderTarget();
 private:
+	float m_deltaTimeLast, m_deltaTimeCurrent;
 	GLFWwindow* m_window;
 	static ISwapChain* m_swapChain;
 	static IRenderDevice* m_renderDevice;

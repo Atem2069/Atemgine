@@ -16,6 +16,8 @@ public:
 	virtual void present() = 0;
 
 	virtual void draw(DrawCall drawCallInfo) = 0;
+
+	virtual float deltaTime() = 0;
 protected:
 };
 

@@ -43,6 +43,8 @@ bool IRenderer::initialize(int width, int height)
 
 	m_currentInstance = this;
 
+	m_deltaTimeLast = 0; m_deltaTimeCurrent = 0;
+
 	return true;
 
 }
@@ -71,11 +73,18 @@ void IRenderer::processEvents()
 void IRenderer::present()
 {
 	IRenderer::getSwapChain()->present();
+	m_deltaTimeLast = m_deltaTimeCurrent;
+	m_deltaTimeCurrent = glfwGetTime();
 }
 
 void IRenderer::draw(DrawCall drawCallInfo)
 {
 	APIDispatchDrawCall(drawCallInfo);
+}
+
+float IRenderer::deltaTime()
+{
+	return m_deltaTimeCurrent - m_deltaTimeLast;
 }
 
 ISwapChain* IRenderer::getSwapChain()

@@ -40,6 +40,9 @@
     <Filter Include="Source Files\Engine">
       <UniqueIdentifier>{4c2a0a51-2561-41d6-b4bc-01cb3bae06e9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Engine\Misc">
+      <UniqueIdentifier>{12da7224-5c1c-44f7-86cf-5a8a25b5f190}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="headers\base\RendererBase.h">
@@ -122,6 +125,9 @@
     </ClInclude>
     <ClInclude Include="headers\Engine\Camera.h">
       <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\Engine\Misc\MathHelpers.h">
+      <Filter>Header Files\Engine\Misc</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
