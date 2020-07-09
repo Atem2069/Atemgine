@@ -16,3 +16,4 @@ using namespace DirectX;
 
 #include "Engine\Model.h"
 #include "Engine\Camera.h"
+#include "Engine\Scene.h"
