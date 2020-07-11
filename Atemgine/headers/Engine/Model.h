@@ -24,8 +24,11 @@ public:
 	void destroy();
 
 	void writeDrawCall(DrawCall& drawCall);	//Writes model information to current draw call. intended to be used in a scene manager which generates and dispatches draw calls
+		
+	XMMATRIX transform;
 private:
 	IVertexBuffer* vertexBuffer;
 	IIndexBuffer* indexBuffer;
+	IConstantBuffer* transformContainer;
 	std::vector<DrawInstance> meshes;	//DrawInstance struct contains most of the data we need to describe a mesh right now. 
 };

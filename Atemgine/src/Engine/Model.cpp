@@ -74,6 +74,17 @@ bool IModel::load(std::string path)
 	if (!indexBuffer->initialize(iboData))
 		return false;
 
+	transform = XMMatrixIdentity();
+
+	ConstantBufferUploadInfo info = {};
+	info.rawData = (void*)&transform;
+	info.sizeBytes = sizeof(XMMATRIX);
+
+	transformContainer = new IConstantBuffer;
+	if (!transformContainer->initialize(info))
+		return false;
+	transformContainer->setBinding(BIND_VS, 1);
+
 	return true;
 }
 
@@ -85,6 +96,12 @@ void IModel::destroy()
 
 void IModel::writeDrawCall(DrawCall& drawCall)
 {
+	ConstantBufferUploadInfo newInfo = {};
+	newInfo.rawData = (void*)&transform;
+	newInfo.sizeBytes = sizeof(XMMATRIX);
+	transformContainer->update(newInfo);
+
+	drawCall.constantBuffers.push_back(transformContainer);
 	drawCall.vertexBuffer = vertexBuffer;
 	drawCall.indexBuffer = indexBuffer;
 	drawCall.drawInstances = meshes;

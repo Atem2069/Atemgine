@@ -135,6 +135,7 @@
     <ClInclude Include="headers\base\RendererBase.h" />
     <ClInclude Include="headers\base\RenderTargetBase.h" />
     <ClInclude Include="headers\base\ShaderBase.h" />
+    <ClInclude Include="headers\base\Texture2DBase.h" />
     <ClInclude Include="headers\base\VertexBufferBase.h" />
     <ClInclude Include="headers\ConstantBuffer.h" />
     <ClInclude Include="headers\d3d11\ConstantBufferD3D11.h" />
